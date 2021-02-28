@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text ="Which operating system is good"
+            android:layout_weight="1"
+        />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="option1"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="option2"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="option3"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="option4"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

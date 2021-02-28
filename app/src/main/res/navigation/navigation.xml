@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/yearList">
+
+    <fragment
+        android:id="@+id/yearList"
+        android:name="com.example.gatepreviousyear.YearList"
+        android:label="fragment_year_list"
+        tools:layout="@layout/fragment_year_list" >
+        <action
+            android:id="@+id/action_yearList_to_questionPaper"
+            app:destination="@id/questionPaper" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionPaper"
+        android:name="com.example.gatepreviousyear.QuestionPaper"
+        android:label="fragment_question_paper"
+        tools:layout="@layout/fragment_question_paper" >
+        <action
+            android:id="@+id/action_questionPaper_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.example.gatepreviousyear.Result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+</navigation>

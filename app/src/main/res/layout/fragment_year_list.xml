@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".YearList">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <Button
+        android:id ="@+id/twenty"
+        android:text = "2020"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        style="@style/Button_style" />
+    <Button
+        android:id = "@+id/ninteen"
+        android:text = "2019"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        style = "@style/Button_style"
+        />
+
+    <Button
+        android:id ="@+id/eighteen"
+        android:text="2018"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        style = "@style/Button_style"
+        />
+    </LinearLayout>
+
+
+</layout>
