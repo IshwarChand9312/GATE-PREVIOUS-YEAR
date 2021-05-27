@@ -4,8 +4,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity"
+    >
 
->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id ="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,5 +27,21 @@
         />
 
     </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity ="start"
+            app:menu ="@menu/navdrawer"
+            app:headerLayout="@layout/header"
+            app:itemTextColor="@color/black"
+            app:itemBackground="@color/white"
+            android:background="#DF5C5B5B"
+            />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
 
 </layout>

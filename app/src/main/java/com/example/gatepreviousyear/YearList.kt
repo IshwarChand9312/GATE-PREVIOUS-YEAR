@@ -1,5 +1,6 @@
 package com.example.gatepreviousyear
 
+import android.app.ActionBar
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,9 +20,11 @@ class YearList : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentYearListBinding>(inflater,R.layout.fragment_year_list,container,false)
 
-       binding.twenty.setOnClickListener { view :View ->
+       binding.ninteen.setOnClickListener { view :View ->
            Navigation.findNavController(view).navigate(R.id.action_yearList_to_questionPaper)
        }
+
+
 
 
         return binding.root
