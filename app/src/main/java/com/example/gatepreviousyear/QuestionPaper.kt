@@ -50,7 +50,8 @@ class QuestionPaper : Fragment() {
 
         binding.submitPaper.setOnClickListener {view ->
           //  CheckingQuestions(binding)
-            view.findNavController().navigate(QuestionPaperDirections.actionQuestionPaperToResult(question_attempted,total_question,total_marks))
+          //  view.findNavController().navigate(QuestionPaperDirections.actionQuestionPaperToResult(question_attempted,total_question,total_marks))
+        view.findNavController().navigate(R.id.action_questionPaper_to_result)
         }
 
         binding.cancelPaper.setOnClickListener {

@@ -33,7 +33,7 @@
              android:id ="@+id/tota_question"
             android:layout_width="match_parent"
              android:layout_height="match_parent"
-            android:text=""
+            android:text="28"
             android:gravity="end"
             android:paddingRight="30dp"
             android:layout_marginLeft="5dp"
@@ -58,7 +58,7 @@
                 android:id ="@+id/attempted_questions"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text=""
+                android:text="3"
                 android:gravity="end"
                 android:paddingRight="30dp"
                 android:layout_marginLeft="5dp"/>
@@ -84,7 +84,7 @@
                 android:layout_height="match_parent"
                 android:gravity="end"
                 android:paddingRight="30dp"
-                android:text="0"
+                android:text="2"
                 android:layout_marginLeft="5dp"
                 />
 

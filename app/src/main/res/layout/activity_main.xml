@@ -36,9 +36,6 @@
             android:layout_gravity ="start"
             app:menu ="@menu/navdrawer"
             app:headerLayout="@layout/header"
-            app:itemTextColor="@color/black"
-            app:itemBackground="@color/white"
-            android:background="#DF5C5B5B"
             />
 
 
